@@ -242,6 +242,7 @@ impl RowStream {
         self.rows_affected
     }
 
+    /// Returns the statement
     pub fn statement(&self) -> &Statement {
         &self.statement
     }
