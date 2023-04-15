@@ -241,4 +241,8 @@ impl RowStream {
     pub fn rows_affected(&self) -> Option<u64> {
         self.rows_affected
     }
+
+    pub fn statement(&self) -> &Statement {
+        &self.statement
+    }
 }
